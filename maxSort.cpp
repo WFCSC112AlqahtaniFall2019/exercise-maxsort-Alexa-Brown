@@ -42,21 +42,21 @@ int main() {
 /* the function definitions */
 
 //Max sort function
-void maxSort(vector<int>& list) {
+void maxSort(vector<int>& v) {
 
     int j =0;
 
-    for (int i = list.size() - 1; i >= 0; i--) {
+    for (int i = v.size() - 1; i >= 0; i--) {
         /*complete the code*/
         int currentMax = 0;
 
-        for(j = 1; j<=i; j++){
-            if (list.at(j) >= list.at(currentMax)){
-                currentMax = j;
-                swap(list.at(j), list.at(currentMax));
+        for(j = 0; j<=i; j++){
+            if (v.at(j) >= v.at(currentMax)){
+                currentMax = j;}
+                swap(v.at(currentMax), v.at(i));
                 cout << "currentMax: " << currentMax << " ";
 
-            }
+
 
             /*complete the code*/
         }
